@@ -1,0 +1,173 @@
+/* Responsive design improvements */
+
+/* Base responsive adjustments */
+@media (max-width: 768px) {
+  .md\:grid-cols-2, .md\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .md\:col-span-2 {
+    grid-column: span 1;
+  }
+  
+  .md\:flex-row {
+    flex-direction: column;
+  }
+  
+  .md\:order-1, .md\:order-2 {
+    order: 0;
+  }
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 640px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+  
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .text-3xl {
+    font-size: 1.75rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .p-8 {
+    padding: 1rem;
+  }
+  
+  .py-20 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .gap-4 {
+    gap: 0.75rem;
+  }
+  
+  .h-screen {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile browsers */
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) {
+  .hover\:bg-slate-200:hover {
+    background-color: transparent;
+  }
+  
+  button, 
+  a, 
+  [role="button"] {
+    min-height: 44px; /* Minimum touch target size */
+    min-width: 44px;
+  }
+  
+  .p-4 {
+    padding: 1rem;
+  }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .h-screen {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .py-20 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* Dark mode improvements */
+@media (prefers-color-scheme: dark) {
+  .bg-slate-50 {
+    background-color: hsl(var(--background));
+  }
+  
+  .text-slate-700 {
+    color: hsl(var(--foreground));
+  }
+  
+  .text-slate-900 {
+    color: hsl(var(--foreground));
+  }
+}
+
+/* Animation performance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode */
+@media (forced-colors: active) {
+  * {
+    border-color: ButtonText;
+  }
+}
+
+/* Container queries for component-level responsiveness */
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+@container card (max-width: 300px) {
+  .card-content {
+    flex-direction: column;
+  }
+}
+
+/* Improved focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling but respect user preferences */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Responsive typography with clamp */
+.responsive-heading {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.responsive-text {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
