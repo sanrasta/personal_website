@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
@@ -23,7 +22,6 @@ import {
   ExternalLink,
   Star,
   Calendar,
-  Clock,
   Trophy,
   Medal
 } from 'lucide-react'

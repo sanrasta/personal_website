@@ -19,10 +19,10 @@ import {
   Palette, 
   Dumbbell, 
   Menu,
-  X,
   Github,
   Linkedin,
-  Twitter
+  Twitter,
+  Instagram
 } from 'lucide-react'
 
 export function Navbar() {
@@ -45,7 +45,7 @@ export function Navbar() {
     }`}>
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
         <Link href="/" className="font-bold text-xl text-slate-900 dark:text-white">
-          Santiago Ramirez
+          Santiago Ramírez
         </Link>
         
         {/* Desktop Navigation */}
@@ -129,14 +129,45 @@ export function Navbar() {
         
         {/* Social Icons - Desktop */}
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-            <Github className="h-5 w-5" />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+            asChild
+          >
+            <Link href="https://github.com/sanrasta" target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5" />
+            </Link>
           </Button>
-          <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-            <Linkedin className="h-5 w-5" />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+            asChild
+          >
+            <Link href="https://www.linkedin.com/in/santiagoramirezf" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" />
+            </Link>
           </Button>
-          <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-            <Twitter className="h-5 w-5" />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+            asChild
+          >
+            <Link href="https://x.com/srframirez" target="_blank" rel="noopener noreferrer">
+              <Twitter className="h-5 w-5" />
+            </Link>
+          </Button>
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+            asChild
+          >
+            <Link href="https://www.instagram.com/santtiagoramirez" target="_blank" rel="noopener noreferrer">
+              <Instagram className="h-5 w-5" />
+            </Link>
           </Button>
         </div>
         
@@ -152,9 +183,6 @@ export function Navbar() {
               <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center mb-8">
                   <p className="font-bold text-lg">Santiago Ramirez</p>
-                  <Button variant="ghost" size="icon" onClick={() => setIsMobileMenuOpen(false)}>
-                    <X className="h-5 w-5" />
-                  </Button>
                 </div>
                 
                 <nav className="flex flex-col gap-2">
@@ -198,14 +226,45 @@ export function Navbar() {
                 
                 <div className="mt-auto pt-4 border-t">
                   <div className="flex justify-center gap-4">
-                    <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-                      <Github className="h-5 w-5" />
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                      asChild
+                    >
+                      <Link href="https://github.com/sanrasta" target="_blank" rel="noopener noreferrer">
+                        <Github className="h-5 w-5" />
+                      </Link>
                     </Button>
-                    <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-                      <Linkedin className="h-5 w-5" />
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                      asChild
+                    >
+                      <Link href="https://www.linkedin.com/in/santiagoramirezf" target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="h-5 w-5" />
+                      </Link>
                     </Button>
-                    <Button variant="ghost" size="icon" className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400">
-                      <Twitter className="h-5 w-5" />
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                      asChild
+                    >
+                      <Link href="https://x.com/srframirez" target="_blank" rel="noopener noreferrer">
+                        <Twitter className="h-5 w-5" />
+                      </Link>
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      size="icon" 
+                      className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                      asChild
+                    >
+                      <Link href="https://www.instagram.com/santtiagoramirez" target="_blank" rel="noopener noreferrer">
+                        <Instagram className="h-5 w-5" />
+                      </Link>
                     </Button>
                   </div>
                 </div>

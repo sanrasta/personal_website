@@ -7,7 +7,8 @@ import {
   Linkedin,
   Twitter,
   Mail,
-  MapPin
+  MapPin,
+  Instagram
 } from 'lucide-react'
 
 export function Footer() {
@@ -18,19 +19,50 @@ export function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Santiago Ramirez</h3>
+            <h3 className="text-xl font-bold mb-4">Santiago Ramírez</h3>
             <p className="text-slate-400 mb-4">
               Creating at the intersection of technology, art, and physical excellence.
             </p>
-            <div className="flex gap-3">
-              <Button variant="ghost" size="icon" className="text-white hover:text-blue-400 hover:bg-slate-800">
-                <Github className="h-5 w-5" />
+            <div className="flex gap-4">
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                asChild
+              >
+                <Link href="https://github.com/sanrasta" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-5 w-5" />
+                </Link>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-blue-400 hover:bg-slate-800">
-                <Linkedin className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                asChild
+              >
+                <Link href="https://www.linkedin.com/in/santiagoramirezf" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                </Link>
               </Button>
-              <Button variant="ghost" size="icon" className="text-white hover:text-blue-400 hover:bg-slate-800">
-                <Twitter className="h-5 w-5" />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                asChild
+              >
+                <Link href="https://x.com/srframirez" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-slate-700 hover:text-blue-600 dark:text-slate-200 dark:hover:text-blue-400"
+                asChild
+              >
+                <Link href="https://www.instagram.com/santtiagoramirez" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                </Link>
               </Button>
             </div>
           </div>
@@ -67,13 +99,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-slate-400 mt-0.5" />
                 <div>
-                  <p className="text-white">santiago@example.com</p>
+                  <p className="text-white">santidotio@gmail.com</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-slate-400 mt-0.5" />
                 <div>
-                  <p className="text-white">San Francisco, California</p>
+                  <p className="text-white">Houston, Texas</p>
                 </div>
               </li>
             </ul>

@@ -14,7 +14,9 @@ import {
   ChevronDown, 
   Github, 
   Linkedin, 
-  Twitter 
+  Twitter,
+  CircleDot,
+  Waves
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -27,7 +29,7 @@ export default function Home() {
       if (scrollPosition < 300) {
         setActiveSection('hero')
       } else if (scrollPosition < 800) {
-        setActiveSection('coder')
+        setActiveSection('appsmith')
       } else if (scrollPosition < 1300) {
         setActiveSection('artist')
       } else {
@@ -123,7 +125,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Santiago Ramirez
+            Santiago Ramírez
           </motion.h1>
           
           <motion.div
@@ -134,7 +136,7 @@ export default function Home() {
           >
             <div className="flex items-center gap-2">
               <Code className="h-6 w-6 text-blue-400" />
-              <span className="text-xl">Coder</span>
+              <span className="text-xl">Appsmith</span>
             </div>
             <div className="flex items-center gap-2">
               <Palette className="h-6 w-6 text-purple-400" />
@@ -189,15 +191,13 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
             <Code className="h-10 w-10 text-blue-600" />
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Coder</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">App Developer</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-lg text-slate-700 mb-6">
-                As a passionate software developer, I craft elegant solutions to complex problems. 
-                My expertise spans across full-stack development, with a focus on creating 
-                responsive, accessible, and performant web applications.
+                As a mobile app developer, I build intuitive and performant cross-platform applications using React Native. My focus is on delivering seamless user experiences for both iOS and Android, leveraging the power of JavaScript and native device APIs.
               </p>
               
               <h3 className="text-xl font-semibold mb-4 text-slate-800">Technical Skills</h3>
@@ -205,29 +205,29 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                   <CardContent className="p-4">
-                    <h4 className="font-medium">Frontend</h4>
-                    <p className="text-sm text-slate-600">React, Next.js, TypeScript, Tailwind CSS</p>
+                    <h4 className="font-medium">Mobile</h4>
+                    <p className="text-sm text-slate-600">React Native, Expo, TypeScript, Redux</p>
                   </CardContent>
                 </Card>
                 
                 <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                   <CardContent className="p-4">
-                    <h4 className="font-medium">Backend</h4>
-                    <p className="text-sm text-slate-600">Node.js, Express, Python, Django</p>
+                    <h4 className="font-medium">APIs & Native</h4>
+                    <p className="text-sm text-slate-600">REST, GraphQL, Camera, Location, Push Notifications</p>
                   </CardContent>
                 </Card>
                 
                 <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                   <CardContent className="p-4">
-                    <h4 className="font-medium">Database</h4>
-                    <p className="text-sm text-slate-600">PostgreSQL, MongoDB, Firebase</p>
+                    <h4 className="font-medium">Testing</h4>
+                    <p className="text-sm text-slate-600">Jest, React Native Testing Library</p>
                   </CardContent>
                 </Card>
                 
                 <Card className="border-blue-200 hover:border-blue-400 transition-colors">
                   <CardContent className="p-4">
-                    <h4 className="font-medium">DevOps</h4>
-                    <p className="text-sm text-slate-600">Docker, CI/CD, AWS, Vercel</p>
+                    <h4 className="font-medium">Deployment</h4>
+                    <p className="text-sm text-slate-600">Expo Go, EAS Build, App Store, Google Play</p>
                   </CardContent>
                 </Card>
               </div>
@@ -246,14 +246,12 @@ export default function Home() {
               </div>
               
               <div className="space-y-2">
-                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~</span>$ npm create next-app</p>
-                <p>✓ Creating a new Next.js app...</p>
-                <p>✓ Installing dependencies...</p>
-                <p>✓ Initializing git repository...</p>
-                <p className="text-green-400">Success! Created my-portfolio</p>
-                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~</span>$ cd my-portfolio</p>
-                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~/my-portfolio</span>$ npm run dev</p>
-                <p className="text-yellow-400">ready - started server on 0.0.0.0:3000</p>
+                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~</span>$ npm install -g expo-cli</p>
+                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~</span>$ expo init MyReactNativeApp</p>
+                <p>✓ Created a new React Native app</p>
+                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~</span>$ cd MyReactNativeApp</p>
+                <p><span className="text-green-400">santiago@dev</span>:<span className="text-blue-400">~/MyReactNativeApp</span>$ expo start</p>
+                <p className="text-yellow-400">Starting project on Expo...</p>
                 <p className="animate-pulse">█</p>
               </div>
             </div>
@@ -273,12 +271,12 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <div className="bg-purple-200 h-40 rounded-lg"></div>
-                  <div className="bg-purple-300 h-64 rounded-lg"></div>
+                  <img src="/images/photo1.jpg" alt="Photography 1" className="w-full h-40 object-cover rounded-lg" />
+                  <img src="/images/photo2.jpg" alt="Photography 2" className="w-full h-64 object-cover rounded-lg" />
                 </div>
                 <div className="space-y-4 pt-8">
-                  <div className="bg-purple-400 h-64 rounded-lg"></div>
-                  <div className="bg-purple-100 h-40 rounded-lg"></div>
+                  <img src="/images/photo3.JPG" alt="Photography 3" className="w-full h-64 object-cover rounded-lg" />
+                  <img src="/images/photo44.png" alt="Photography 4" className="w-full h-40 object-cover rounded-lg brightness-200" />
                 </div>
               </div>
             </div>
@@ -332,72 +330,26 @@ export default function Home() {
       </section>
 
       {/* Athlete Section */}
-      <section id="athlete" className="py-20 px-4 md:px-8 bg-green-50">
+      <section id="athlete" className="py-20 px-4 md:px-8 bg-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
-            <Dumbbell className="h-10 w-10 text-green-600" />
+            <Dumbbell className="h-10 w-10 text-blue-600" />
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Athlete</h2>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="text-lg text-slate-700 mb-6">
-                Physical discipline complements my creative and technical pursuits. As an athlete, 
-                I push my limits, build resilience, and maintain the energy needed for sustained 
-                creative and intellectual work.
+                As a dedicated athlete, I push my limits in both training and competition. My focus is on continuous improvement and achieving new personal bests.
               </p>
-              
-              <div className="space-y-6 mb-8">
-                <Card className="border-green-200 hover:border-green-400 transition-colors">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">Running</h3>
-                    <p className="text-slate-600 mb-4">
-                      Long-distance running teaches me patience and persistence. The meditative 
-                      state of a long run often leads to my best creative breakthroughs.
-                    </p>
-                    <div className="flex flex-wrap items-center gap-4">
-                      <div className="text-center">
-                        <p className="text-2xl font-bold text-green-600">3</p>
-                        <p className="text-xs text-slate-500">Marathons</p>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-2xl font-bold text-green-600">21.1</p>
-                        <p className="text-xs text-slate-500">Best Half (km)</p>
-                      </div>
-                      <div className="text-center">
-                        <p className="text-2xl font-bold text-green-600">1200</p>
-                        <p className="text-xs text-slate-500">Annual km</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-                
-                <Card className="border-green-200 hover:border-green-400 transition-colors">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-2">Strength Training</h3>
-                    <p className="text-slate-600">
-                      Building strength is about consistency and incremental progress—principles 
-                      that apply equally to coding and artistic practice.
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-              
-              <Button className="bg-green-600 hover:bg-green-700" asChild>
-                <Link href="/portfolio?tab=athletics">Training Log</Link>
+              <Button className="bg-blue-600 hover:bg-blue-700" asChild>
+                <Link href="/portfolio?tab=athlete">View Achievements</Link>
               </Button>
             </div>
-            
-            <div className="relative h-80 md:h-auto overflow-hidden rounded-lg">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-green-900/60"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <p className="text-xl font-semibold mb-2">Next Challenge</p>
-                <p className="text-sm mb-4">Ultra Marathon - 50km Mountain Trail</p>
-                <div className="w-full bg-white/30 rounded-full h-2 mb-1">
-                  <div className="bg-green-400 h-2 rounded-full" style={{ width: '75%' }}></div>
-                </div>
-                <p className="text-xs">Training progress: 75%</p>
-              </div>
+            <div className="grid grid-cols-2 gap-4">
+              <img src="/images/athlete1.png" alt="Athlete 1" className="w-full h-48 object-cover rounded-lg" />
+              <img src="/images/athlete2.jpeg" alt="Athlete 2" className="w-full h-48 object-cover object-[50%_65%] rounded-lg" />
+              <img src="/images/athlete5.png" alt="Athlete 3" className="w-full h-48 object-cover object-[50%_65%] rounded-lg" />
+              <img src="/images/athlete6.JPG" alt="Athlete 4" className="w-full h-48 object-cover rounded-lg" />
             </div>
           </div>
         </div>

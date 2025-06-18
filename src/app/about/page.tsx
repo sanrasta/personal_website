@@ -113,7 +113,7 @@ export default function About() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-slate-700">
-                    I'm Santiago Ramirez, a passionate individual who thrives at the intersection of technology, 
+                    I&apos;m Santiago Ramirez, a passionate individual who thrives at the intersection of technology, 
                     creativity, and physical discipline. My journey has been shaped by a relentless curiosity 
                     and a desire to express myself through multiple mediums.
                   </p>
@@ -121,14 +121,14 @@ export default function About() {
                   <p className="text-slate-700">
                     As a coder, I build solutions that solve real-world problems. As an artist, I explore visual 
                     languages that communicate beyond words. As an athlete, I push my physical limits to strengthen 
-                    my mind and body. These three dimensions of my identity don't exist in isolation—they inform 
+                    my mind and body. These three dimensions of my identity don&apos;t exist in isolation—they inform 
                     and enhance each other.
                   </p>
                   
                   <p className="text-slate-700">
-                    I believe in the power of cross-disciplinary thinking. The problem-solving mindset I've developed 
+                    I believe in the power of cross-disciplinary thinking. The problem-solving mindset I&apos;ve developed 
                     through coding helps me approach artistic challenges systematically. The creativity I nurture 
-                    through art brings innovation to my technical work. And the discipline and perseverance I've 
+                    through art brings innovation to my technical work. And the discipline and perseverance I&apos;ve 
                     gained through athletics gives me the endurance to pursue long-term goals in all areas of my life.
                   </p>
                 </CardContent>
@@ -195,7 +195,7 @@ export default function About() {
                     architecture.
                   </p>
                   <p className="text-slate-700">
-                    I'm particularly passionate about interactive web applications, data visualization, 
+                    I&apos;m particularly passionate about interactive web applications, data visualization, 
                     and the potential of AI to augment human creativity.
                   </p>
                 </CardContent>
@@ -210,7 +210,7 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    My artistic practice spans digital and traditional mediums. I'm fascinated by the 
+                    My artistic practice spans digital and traditional mediums. I&apos;m fascinated by the 
                     intersection of algorithmic processes and human expression, creating works that 
                     blend computation with intuition.
                   </p>
@@ -235,7 +235,7 @@ export default function About() {
                     mental fortitude as much as physical development.
                   </p>
                   <p className="text-slate-700">
-                    The discipline, goal-setting, and incremental progress I've learned through 
+                    The discipline, goal-setting, and incremental progress I&apos;ve learned through 
                     athletics directly translates to my professional and creative work.
                   </p>
                 </CardContent>
@@ -414,8 +414,8 @@ export default function About() {
                       <p className="mb-3">
                         I believe the most innovative solutions emerge at the intersection of different 
                         disciplines. By drawing connections between seemingly unrelated fields—coding, 
-                        art, and athletics in my case—I've discovered unique approaches to problem-solving 
-                        that wouldn't be possible within the confines of a single domain.
+                        art, and athletics in my case—I&apos;ve discovered unique approaches to problem-solving 
+                        that wouldn&apos;t be possible within the confines of a single domain.
                       </p>
                       <p>
                         This cross-pollination of ideas has led me to develop technical solutions informed 
@@ -457,7 +457,7 @@ export default function About() {
                       </p>
                       <p>
                         This philosophy of continuous iteration has allowed me to complete ambitious projects 
-                        that would have been overwhelming if approached as all-or-nothing endeavors. It's also 
+                        that would have been overwhelming if approached as all-or-nothing endeavors. It&apos;s also 
                         made me more adaptable and responsive to changing conditions and new information.
                       </p>
                     </AccordionContent>
@@ -520,7 +520,7 @@ export default function About() {
                 <CardContent>
                   <p className="text-slate-700">
                     True growth happens at the edge of comfort. I deliberately seek challenges that 
-                    push me beyond my current capabilities, whether that's tackling a complex technical 
+                    push me beyond my current capabilities, whether that&apos;s tackling a complex technical 
                     problem, exploring an unfamiliar artistic medium, or setting a new athletic goal. 
                     Discomfort is a signal of potential expansion.
                   </p>
