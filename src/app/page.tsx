@@ -19,6 +19,7 @@ import {
   Waves
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('hero')
@@ -271,12 +272,45 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
-                  <img src="/images/photo1.jpg" alt="Photography 1" className="w-full h-40 object-cover rounded-lg" />
-                  <img src="/images/photo2.jpg" alt="Photography 2" className="w-full h-64 object-cover rounded-lg" />
+                  <div className="relative w-full h-40">
+                    <Image 
+                      src="/images/photo1.jpg" 
+                      alt="Photography 1" 
+                      fill
+                      className="object-cover rounded-lg"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      priority
+                    />
+                  </div>
+                  <div className="relative w-full h-64">
+                    <Image 
+                      src="/images/photo2.jpg" 
+                      alt="Photography 2" 
+                      fill
+                      className="object-cover rounded-lg"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
                 <div className="space-y-4 pt-8">
-                  <img src="/images/photo3.JPG" alt="Photography 3" className="w-full h-64 object-cover rounded-lg" />
-                  <img src="/images/photo44.png" alt="Photography 4" className="w-full h-40 object-cover rounded-lg brightness-200" />
+                  <div className="relative w-full h-64">
+                    <Image 
+                      src="/images/photo3.JPG" 
+                      alt="Photography 3" 
+                      fill
+                      className="object-cover rounded-lg"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
+                  <div className="relative w-full h-40">
+                    <Image 
+                      src="/images/photo44.png" 
+                      alt="Photography 4" 
+                      fill
+                      className="object-cover rounded-lg brightness-200"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -346,10 +380,42 @@ export default function Home() {
               </Button>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/images/athlete1.png" alt="Athlete 1" className="w-full h-48 object-cover rounded-lg" />
-              <img src="/images/athlete2.jpeg" alt="Athlete 2" className="w-full h-48 object-cover object-[50%_65%] rounded-lg" />
-              <img src="/images/athlete5.png" alt="Athlete 3" className="w-full h-48 object-cover object-[50%_65%] rounded-lg" />
-              <img src="/images/athlete6.JPG" alt="Athlete 4" className="w-full h-48 object-cover rounded-lg" />
+              <div className="relative w-full h-48">
+                <Image 
+                  src="/images/athlete1.png" 
+                  alt="Athlete 1" 
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="relative w-full h-48">
+                <Image 
+                  src="/images/athlete2.jpeg" 
+                  alt="Athlete 2" 
+                  fill
+                  className="object-cover object-[50%_65%] rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="relative w-full h-48">
+                <Image 
+                  src="/images/athlete5.png" 
+                  alt="Athlete 3" 
+                  fill
+                  className="object-cover object-[50%_65%] rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <div className="relative w-full h-48">
+                <Image 
+                  src="/images/athlete6.JPG" 
+                  alt="Athlete 4" 
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
             </div>
           </div>
         </div>
