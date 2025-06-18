@@ -144,21 +144,21 @@ export default function About() {
                       <MapPin className="h-5 w-5 text-slate-500 mt-0.5" />
                       <div>
                         <p className="font-medium">Location</p>
-                        <p className="text-sm text-slate-600">San Francisco, California</p>
+                        <p className="text-sm text-slate-600">Houston, Texas</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Mail className="h-5 w-5 text-slate-500 mt-0.5" />
                       <div>
                         <p className="font-medium">Contact</p>
-                        <p className="text-sm text-slate-600">santiago@example.com</p>
+                        <p className="text-sm text-slate-600">hello@santti.dev</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
                       <Github className="h-5 w-5 text-slate-500 mt-0.5" />
                       <div>
                         <p className="font-medium">Github</p>
-                        <p className="text-sm text-slate-600">@santiagoramirez</p>
+                        <p className="text-sm text-slate-600">@sanrasta</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -230,8 +230,7 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    My athletic pursuits center around endurance sports, particularly long-distance 
-                    running and strength training. I approach physical training as a practice in 
+                    My athletic pursuits center around endurance sports, particularly calisthenics and strength training. I approach physical training as a practice in 
                     mental fortitude as much as physical development.
                   </p>
                   <p className="text-slate-700">
@@ -258,9 +257,9 @@ export default function About() {
                       <p className="font-semibold text-lg">Computer Science Degree</p>
                       <p className="text-sm text-slate-500 mb-2">2015 - 2019</p>
                       <p className="text-slate-700">
-                        Graduated with honors in Computer Science with a minor in Digital Arts. 
-                        My thesis explored procedural generation techniques for creating interactive 
-                        digital environments.
+                        Graduated with honors in Computer Science with a minor in Mathematics. 
+                        Was tech lead and upgraded the LIFE Communication System of USAA.
+                        Started working as a freelance developer in 2023.
                       </p>
                     </div>
                   </div>
