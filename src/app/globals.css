@@ -75,6 +75,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Section heading size fix - target only main section headings */
+section h2.text-3xl {
+  font-size: 1.875rem; /* 30px */
+}
+
+@media (min-width: 768px) {
+  section h2.text-4xl {
+    font-size: 2.25rem; /* 36px */
+  }
+}
+
 /* Custom transitions */
 .transition-all {
   transition-property: all;

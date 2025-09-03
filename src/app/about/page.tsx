@@ -83,7 +83,7 @@ export default function About() {
             animate="visible"
             variants={fadeIn}
           >
-            Get to know the person behind the code, art, and athletic achievements.
+            Get to know the person behind the code, art, and movement practice.
           </motion.p>
         </div>
       </div>
@@ -120,16 +120,16 @@ export default function About() {
                   
                   <p className="text-slate-700">
                     As a coder, I build solutions that solve real-world problems. As an artist, I explore visual 
-                    languages that communicate beyond words. As an athlete, I push my physical limits to strengthen 
-                    my mind and body. These three dimensions of my identity don&apos;t exist in isolation—they inform 
+                    languages that communicate beyond words. Through movement, I cultivate consistency and play, 
+                    keeping my body and mind healthy. These three dimensions of my identity don&apos;t exist in isolation—they inform 
                     and enhance each other.
                   </p>
                   
                   <p className="text-slate-700">
                     I believe in the power of cross-disciplinary thinking. The problem-solving mindset I&apos;ve developed 
                     through coding helps me approach artistic challenges systematically. The creativity I nurture 
-                    through art brings innovation to my technical work. And the discipline and perseverance I&apos;ve 
-                    gained through athletics gives me the endurance to pursue long-term goals in all areas of my life.
+                    through art brings innovation to my technical work. And the consistency and mindful practice I&apos;ve 
+                    developed through movement gives me the endurance to pursue long-term goals in all areas of my life.
                   </p>
                 </CardContent>
               </Card>
@@ -172,7 +172,7 @@ export default function About() {
                       <Heart className="h-5 w-5 text-slate-500 mt-0.5" />
                       <div>
                         <p className="font-medium">Interests</p>
-                        <p className="text-sm text-slate-600">AI, generative art, trail running</p>
+                        <p className="text-sm text-slate-600">AI, generative art, movement practice</p>
                       </div>
                     </li>
                   </ul>
@@ -221,21 +221,21 @@ export default function About() {
                 </CardContent>
               </Card>
               
-              <Card className="bg-green-50 border-green-200">
+              <Card className="bg-blue-50 border-blue-200">
                 <CardHeader className="pb-2">
                   <div className="flex items-center gap-2">
-                    <Dumbbell className="h-5 w-5 text-green-600" />
-                    <CardTitle className="text-green-900">As an Athlete</CardTitle>
+                    <Dumbbell className="h-5 w-5 text-blue-600" />
+                    <CardTitle className="text-blue-900">Through Movement</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    My athletic pursuits center around endurance sports, particularly calisthenics and strength training. I approach physical training as a practice in 
-                    mental fortitude as much as physical development.
+                    I don&apos;t chase medals. I train for longevity and play—soccer touches, handstands, 
+                    slackline, and simple gym work. Small, consistent sessions over big peaks.
                   </p>
                   <p className="text-slate-700">
-                    The discipline, goal-setting, and incremental progress I&apos;ve learned through 
-                    athletics directly translates to my professional and creative work.
+                    The consistency, mobility, and playful approach I&apos;ve developed through 
+                    movement directly translates to my professional and creative work.
                   </p>
                 </CardContent>
               </Card>
@@ -278,14 +278,14 @@ export default function About() {
                   </div>
                   
                   <div className="relative">
-                    <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-green-500"></div>
+                    <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-blue-500"></div>
                     <div>
-                      <p className="font-semibold text-lg">First Marathon</p>
+                      <p className="font-semibold text-lg">Movement Practice Begins</p>
                       <p className="text-sm text-slate-500 mb-2">2019</p>
                       <p className="text-slate-700">
-                        Completed my first marathon after six months of dedicated training. 
-                        This achievement taught me the value of consistent effort and the 
-                        power of incremental progress toward ambitious goals.
+                        Started a consistent movement practice focused on longevity rather than competition. 
+                        This shift taught me the value of small daily sessions and the 
+                        power of treating movement as play rather than punishment.
                       </p>
                     </div>
                   </div>

@@ -25,6 +25,7 @@ import {
   Trophy,
   Medal
 } from 'lucide-react'
+import { MovementPortfolio } from '@/features/portfolio/components/MovementPortfolio'
 
 export default function Portfolio() {
   const fadeIn = {
@@ -88,9 +89,9 @@ export default function Portfolio() {
                 <Palette className="h-4 w-4 mr-2" />
                 Art
               </TabsTrigger>
-              <TabsTrigger value="athletics" className="data-[state=active]:bg-green-100 data-[state=active]:text-green-900">
+              <TabsTrigger value="athletics" className="data-[state=active]:bg-blue-100 data-[state=active]:text-blue-900">
                 <Dumbbell className="h-4 w-4 mr-2" />
-                Athletics
+                Movement
               </TabsTrigger>
             </TabsList>
           </div>
@@ -403,215 +404,9 @@ export default function Portfolio() {
             </div>
           </TabsContent>
           
-          {/* Athletics Tab */}
+          {/* Movement Tab */}
           <TabsContent value="athletics" className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border-green-200 hover:border-green-400 transition-all">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle>Marathon Achievements</CardTitle>
-                      <CardDescription>Long-distance running milestones</CardDescription>
-                    </div>
-                    <Trophy className="h-5 w-5 text-yellow-500" />
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
-                      <div className="flex items-center gap-3">
-                        <Medal className="h-5 w-5 text-yellow-500" />
-                        <div>
-                          <p className="font-medium">San Francisco Marathon</p>
-                          <div className="flex items-center gap-2 text-sm text-slate-500">
-                            <Calendar className="h-3 w-3" />
-                            <span>July 2023</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <p className="font-semibold">3:42:15</p>
-                        <p className="text-xs text-slate-500">Personal Best</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
-                      <div className="flex items-center gap-3">
-                        <Medal className="h-5 w-5 text-slate-400" />
-                        <div>
-                          <p className="font-medium">Chicago Marathon</p>
-                          <div className="flex items-center gap-2 text-sm text-slate-500">
-                            <Calendar className="h-3 w-3" />
-                            <span>October 2022</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <p className="font-semibold">3:51:07</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
-                      <div className="flex items-center gap-3">
-                        <Medal className="h-5 w-5 text-amber-700" />
-                        <div>
-                          <p className="font-medium">New York City Marathon</p>
-                          <div className="flex items-center gap-2 text-sm text-slate-500">
-                            <Calendar className="h-3 w-3" />
-                            <span>November 2021</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="text-right">
-                        <p className="font-semibold">4:05:33</p>
-                        <p className="text-xs text-slate-500">First Marathon</p>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button size="sm" className="bg-green-600 hover:bg-green-700 w-full">
-                    View Running Log
-                  </Button>
-                </CardFooter>
-              </Card>
-              
-              <Card className="border-green-200 hover:border-green-400 transition-all">
-                <CardHeader>
-                  <CardTitle>Training Progress</CardTitle>
-                  <CardDescription>Strength and conditioning development</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    <div>
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Deadlift</p>
-                        <p className="text-slate-500">315 lbs</p>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2.5">
-                        <div className="bg-green-600 h-2.5 rounded-full" style={{ width: '85%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Goal: 365 lbs</p>
-                    </div>
-                    
-                    <div>
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Pull-ups</p>
-                        <p className="text-slate-500">18 reps</p>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2.5">
-                        <div className="bg-green-600 h-2.5 rounded-full" style={{ width: '90%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Goal: 20 reps</p>
-                    </div>
-                    
-                    <div>
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">5K Time</p>
-                        <p className="text-slate-500">19:45</p>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2.5">
-                        <div className="bg-green-600 h-2.5 rounded-full" style={{ width: '75%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Goal: 18:30</p>
-                    </div>
-                    
-                    <div>
-                      <div className="flex justify-between mb-2">
-                        <p className="font-medium">Weekly Training Hours</p>
-                        <p className="text-slate-500">8 hours</p>
-                      </div>
-                      <div className="w-full bg-slate-200 rounded-full h-2.5">
-                        <div className="bg-green-600 h-2.5 rounded-full" style={{ width: '80%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Goal: 10 hours</p>
-                    </div>
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button size="sm" className="bg-green-600 hover:bg-green-700 w-full">
-                    View Training Plan
-                  </Button>
-                </CardFooter>
-              </Card>
-              
-              <Card className="border-green-200 hover:border-green-400 transition-all md:col-span-2">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle>Upcoming Challenges</CardTitle>
-                      <CardDescription>Future athletic goals and events</CardDescription>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Star className="h-4 w-4 text-yellow-500 fill-yellow-500" />
-                      <span className="text-sm text-slate-500">Featured</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Dumbbell className="h-5 w-5 text-green-600" />
-                        <p className="font-semibold">Ultra Marathon</p>
-                      </div>
-                      <p className="text-slate-700 mb-3">50km Mountain Trail Challenge</p>
-                      <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
-                        <Calendar className="h-3 w-3" />
-                        <span>September 2025</span>
-                      </div>
-                      <div className="w-full bg-white rounded-full h-2">
-                        <div className="bg-green-600 h-2 rounded-full" style={{ width: '75%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Training: 75% complete</p>
-                    </div>
-                    
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Dumbbell className="h-5 w-5 text-green-600" />
-                        <p className="font-semibold">Triathlon</p>
-                      </div>
-                      <p className="text-slate-700 mb-3">Olympic Distance</p>
-                      <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
-                        <Calendar className="h-3 w-3" />
-                        <span>July 2025</span>
-                      </div>
-                      <div className="w-full bg-white rounded-full h-2">
-                        <div className="bg-green-600 h-2 rounded-full" style={{ width: '60%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Training: 60% complete</p>
-                    </div>
-                    
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <div className="flex items-center gap-2 mb-2">
-                        <Dumbbell className="h-5 w-5 text-green-600" />
-                        <p className="font-semibold">Strength Competition</p>
-                      </div>
-                      <p className="text-slate-700 mb-3">Regional Powerlifting Meet</p>
-                      <div className="flex items-center gap-2 text-sm text-slate-500 mb-3">
-                        <Calendar className="h-3 w-3" />
-                        <span>November 2025</span>
-                      </div>
-                      <div className="w-full bg-white rounded-full h-2">
-                        <div className="bg-green-600 h-2 rounded-full" style={{ width: '40%' }}></div>
-                      </div>
-                      <p className="text-xs text-slate-500 mt-1">Training: 40% complete</p>
-                    </div>
-                  </div>
-                </CardContent>
-                <CardFooter>
-                  <Button size="sm" className="bg-green-600 hover:bg-green-700">
-                    View Training Schedule
-                  </Button>
-                </CardFooter>
-              </Card>
-            </div>
-            
-            <div className="flex justify-center mt-8">
-              <Button variant="outline" className="text-green-600 border-green-200 hover:border-green-400">
-                View All Athletic Achievements
-              </Button>
-            </div>
+            <MovementPortfolio />
           </TabsContent>
         </Tabs>
         
