@@ -5,61 +5,61 @@
 import { AppDeveloperContent } from '../types'
 
 export const appDeveloperContent: AppDeveloperContent = {
-  title: 'App Developer',
+  title: 'Full-Stack Builder',
   icon: 'Code',
-  description: 'As a mobile app developer, I build intuitive and performant cross-platform applications using React Native. My focus is on delivering seamless user experiences for both iOS and Android, leveraging the power of JavaScript and native device APIs.',
+  description: 'I ship across the entire stack — Next.js and React Native on the front, Fastify and PostgreSQL on the back, n8n for AI orchestration, and Shopify Liquid for commerce. I care about architecture that scales and interfaces that feel alive.',
   buttonText: 'View Projects',
   buttonLink: '/portfolio?tab=coding',
   skills: [
     {
-      id: 'mobile',
-      title: 'Mobile',
-      description: 'React Native, Expo, TypeScript, Redux',
+      id: 'frontend',
+      title: 'Frontend & Mobile',
+      description: 'Next.js, React Native, Expo, GSAP, Framer Motion, Tailwind',
       category: 'mobile'
     },
     {
-      id: 'apis-native',
-      title: 'APIs & Native',
-      description: 'REST, GraphQL, Camera, Location, Push Notifications',
+      id: 'backend',
+      title: 'Backend & Data',
+      description: 'Fastify, PostgreSQL, Prisma, BullMQ, Redis, Zod',
       category: 'api'
     },
     {
-      id: 'testing',
-      title: 'Testing',
-      description: 'Jest, React Native Testing Library',
+      id: 'ai-automation',
+      title: 'AI & Automation',
+      description: 'n8n, Gemini, Claude Code, Spec-Driven Development',
       category: 'testing'
     },
     {
-      id: 'deployment',
-      title: 'Deployment',
-      description: 'Expo Go, EAS Build, App Store, Google Play',
+      id: 'commerce',
+      title: 'Commerce & Deploy',
+      description: 'Shopify Liquid, Stripe, RevenueCat, EAS Build, Cloudflare',
       category: 'deployment'
     }
   ],
   terminalCommands: [
     {
-      id: 'install-expo',
+      id: 'clone',
       prompt: 'santiago@dev:~',
-      command: 'npm install -g expo-cli',
+      command: 'git clone personalization-hub && cd personalization-hub',
       output: ''
     },
     {
-      id: 'init-project',
-      prompt: 'santiago@dev:~',
-      command: 'expo init MyReactNativeApp',
-      output: '✓ Created a new React Native app'
+      id: 'install',
+      prompt: 'santiago@dev:~/personalization-hub',
+      command: 'npm install && npm run db:migrate',
+      output: '✓ 47 dependencies installed\n✓ Migrations applied'
     },
     {
-      id: 'cd-project',
-      prompt: 'santiago@dev:~',
-      command: 'cd MyReactNativeApp',
-      output: ''
+      id: 'start-api',
+      prompt: 'santiago@dev:~/personalization-hub',
+      command: 'npm run dev',
+      output: 'Fastify listening on http://localhost:3000'
     },
     {
-      id: 'start-project',
-      prompt: 'santiago@dev:~/MyReactNativeApp',
-      command: 'expo start',
-      output: 'Starting project on Expo...'
+      id: 'test',
+      prompt: 'santiago@dev:~/personalization-hub',
+      command: 'npm run test:e2e',
+      output: '✓ 24 tests passed — 0 failures'
     },
     {
       id: 'cursor',

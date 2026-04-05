@@ -99,7 +99,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-slate-400 mt-0.5" />
                 <div>
-                  <p className="text-white">santidotio@gmail.com</p>
+                  <p className="text-white">ramirezfsantiago@gmail.com</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -111,8 +111,10 @@ export function Footer() {
             </ul>
             
             <div className="mt-6">
-              <Button className="bg-white text-slate-900 hover:bg-slate-200">
-                Get in Touch
+              <Button className="bg-white text-slate-900 hover:bg-slate-200" asChild>
+                <Link href="mailto:ramirezfsantiago@gmail.com">
+                  Get in Touch
+                </Link>
               </Button>
             </div>
           </div>
@@ -123,11 +125,11 @@ export function Footer() {
             © {currentYear} Santiago Ramirez. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-slate-500">
-            <Link href="#" className="hover:text-white transition-colors">
-              Privacy Policy
+            <Link href="https://github.com/sanrasta" target="_blank" className="hover:text-white transition-colors">
+              GitHub
             </Link>
-            <Link href="#" className="hover:text-white transition-colors">
-              Terms of Service
+            <Link href="https://www.linkedin.com/in/santiagoramirezf" target="_blank" className="hover:text-white transition-colors">
+              LinkedIn
             </Link>
           </div>
         </div>

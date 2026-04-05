@@ -151,7 +151,7 @@ export default function About() {
                       <Mail className="h-5 w-5 text-slate-500 mt-0.5" />
                       <div>
                         <p className="font-medium">Contact</p>
-                        <p className="text-sm text-slate-600">hello@santti.dev</p>
+                        <p className="text-sm text-slate-600">ramirezfsantiago@gmail.com</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -190,13 +190,13 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    My approach to coding is both analytical and creative. I specialize in full-stack 
-                    development with a focus on creating intuitive user experiences backed by robust 
-                    architecture.
+                    Full-stack product builder. I ship across the entire surface — Next.js marketing
+                    sites, React Native mobile apps, Fastify APIs with PostgreSQL, Shopify themes,
+                    and n8n automation pipelines.
                   </p>
                   <p className="text-slate-700">
-                    I&apos;m particularly passionate about interactive web applications, data visualization, 
-                    and the potential of AI to augment human creativity.
+                    I care about architecture that scales (multi-tenancy, state machines, job queues)
+                    and interfaces that feel right (GSAP, Framer Motion, glassmorphism).
                   </p>
                 </CardContent>
               </Card>
@@ -210,13 +210,13 @@ export default function About() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-700 mb-4">
-                    My artistic practice spans digital and traditional mediums. I&apos;m fascinated by the 
-                    intersection of algorithmic processes and human expression, creating works that 
-                    blend computation with intuition.
+                    I make beats in Logic Pro — flipping obscure YouTube samples into something
+                    new. I experiment with generative visuals through code. Every product I
+                    build is a design artifact.
                   </p>
                   <p className="text-slate-700">
-                    Through my art, I explore themes of connection, emergence, and the relationship 
-                    between order and chaos.
+                    The creative eye shows up everywhere — in how a scroll animation lands,
+                    how a mobile transition feels, how a landing page tells a story.
                   </p>
                 </CardContent>
               </Card>
@@ -257,61 +257,48 @@ export default function About() {
                       <p className="font-semibold text-lg">Computer Science Degree</p>
                       <p className="text-sm text-slate-500 mb-2">2015 - 2019</p>
                       <p className="text-slate-700">
-                        Graduated with honors in Computer Science with a minor in Mathematics. 
-                        Was tech lead and upgraded the LIFE Communication System of USAA.
-                        Started working as a freelance developer in 2023.
+                        Graduated with honors in Computer Science. Served as tech lead on the
+                        LIFE Communication System at USAA, learning what production-grade
+                        engineering really means at scale.
                       </p>
                     </div>
                   </div>
-                  
-                  <div className="relative">
-                    <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-purple-500"></div>
-                    <div>
-                      <p className="font-semibold text-lg">First Solo Art Exhibition</p>
-                      <p className="text-sm text-slate-500 mb-2">2018</p>
-                      <p className="text-slate-700">
-                        Showcased a collection of generative art pieces that combined code-driven 
-                        algorithms with traditional painting techniques. This marked a pivotal 
-                        moment in developing my artistic voice.
-                      </p>
-                    </div>
-                  </div>
-                  
+
                   <div className="relative">
                     <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-blue-500"></div>
                     <div>
                       <p className="font-semibold text-lg">Movement Practice Begins</p>
                       <p className="text-sm text-slate-500 mb-2">2019</p>
                       <p className="text-slate-700">
-                        Started a consistent movement practice focused on longevity rather than competition. 
-                        This shift taught me the value of small daily sessions and the 
+                        Started a consistent movement practice focused on longevity rather than competition.
+                        This shift taught me the value of small daily sessions and the
                         power of treating movement as play rather than punishment.
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="relative">
                     <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-blue-500"></div>
                     <div>
-                      <p className="font-semibold text-lg">Senior Developer at TechInnovate</p>
-                      <p className="text-sm text-slate-500 mb-2">2020 - Present</p>
+                      <p className="font-semibold text-lg">Freelance &amp; Full-Stack Product Building</p>
+                      <p className="text-sm text-slate-500 mb-2">2023 - Present</p>
                       <p className="text-slate-700">
-                        Leading development of interactive web applications with a focus on 
-                        accessibility and performance. Mentoring junior developers and 
-                        contributing to open-source projects.
+                        Went independent. Built multi-tenant AI platforms, Shopify stores across
+                        multiple markets, mobile apps with Expo/React Native, and open-source
+                        developer tools. Shipping end-to-end — from database schemas to App Store.
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="relative">
                     <div className="absolute -left-9 mt-1.5 h-5 w-5 rounded-full border-4 border-white bg-purple-500"></div>
                     <div>
-                      <p className="font-semibold text-lg">Art & Technology Residency</p>
-                      <p className="text-sm text-slate-500 mb-2">2022</p>
+                      <p className="font-semibold text-lg">Music Production &amp; Creative Coding</p>
+                      <p className="text-sm text-slate-500 mb-2">Ongoing</p>
                       <p className="text-slate-700">
-                        Three-month residency exploring the intersection of AI and artistic 
-                        expression. Developed a series of interactive installations that 
-                        responded to viewer movement and emotional states.
+                        Started flipping YouTube samples into beats in Logic Pro, and exploring
+                        generative visuals through code. The line between building products and
+                        making art keeps getting thinner.
                       </p>
                     </div>
                   </div>
@@ -331,23 +318,16 @@ export default function About() {
                   <ul className="space-y-4">
                     <li>
                       <p className="font-medium">BS in Computer Science</p>
-                      <p className="text-sm text-slate-500">Stanford University, 2015-2019</p>
+                      <p className="text-sm text-slate-500">2015 - 2019</p>
                       <p className="text-sm text-slate-700 mt-1">
-                        Focus on Human-Computer Interaction and Creative Computing
+                        Graduated with honors, minor in Mathematics
                       </p>
                     </li>
                     <li>
-                      <p className="font-medium">Certificate in Digital Arts</p>
-                      <p className="text-sm text-slate-500">California College of the Arts, 2017</p>
+                      <p className="font-medium">Continuous Self-Education</p>
+                      <p className="text-sm text-slate-500">Ongoing</p>
                       <p className="text-sm text-slate-700 mt-1">
-                        Summer intensive program in digital media and generative art
-                      </p>
-                    </li>
-                    <li>
-                      <p className="font-medium">Advanced Machine Learning</p>
-                      <p className="text-sm text-slate-500">Online Specialization, 2021</p>
-                      <p className="text-sm text-slate-700 mt-1">
-                        Five-course specialization in advanced ML techniques and applications
+                        Deep dives into AI/ML, system design, mobile development, and creative coding through building real products
                       </p>
                     </li>
                   </ul>
@@ -364,24 +344,17 @@ export default function About() {
                 <CardContent>
                   <ul className="space-y-4">
                     <li>
-                      <p className="font-medium">Senior Developer</p>
-                      <p className="text-sm text-slate-500">TechInnovate, 2020-Present</p>
+                      <p className="font-medium">Tech Lead — LIFE Communication System</p>
+                      <p className="text-sm text-slate-500">USAA</p>
                       <p className="text-sm text-slate-700 mt-1">
-                        Leading development of interactive web applications and mentoring junior developers
+                        Led engineering on a critical communication platform at one of the largest financial services companies
                       </p>
                     </li>
                     <li>
-                      <p className="font-medium">Frontend Engineer</p>
-                      <p className="text-sm text-slate-500">CreativeCode Studio, 2019-2020</p>
+                      <p className="font-medium">Full-Stack Developer &amp; Product Builder</p>
+                      <p className="text-sm text-slate-500">Freelance, 2023-Present</p>
                       <p className="text-sm text-slate-700 mt-1">
-                        Developed interactive data visualizations and creative coding projects
-                      </p>
-                    </li>
-                    <li>
-                      <p className="font-medium">Technical Artist (Freelance)</p>
-                      <p className="text-sm text-slate-500">Various Clients, 2018-Present</p>
-                      <p className="text-sm text-slate-700 mt-1">
-                        Creating custom digital art installations and interactive experiences
+                        Shipping end-to-end: multi-tenant AI platforms, Shopify stores, React Native apps, open-source tools
                       </p>
                     </li>
                   </ul>
