@@ -15,7 +15,6 @@ interface MovementPrinciplesProps {
 
 export function MovementPrinciples({ principles }: MovementPrinciplesProps) {
   const [selectedPrinciple, setSelectedPrinciple] = useState<string | null>(null)
-  const [hoveredPrinciple, setHoveredPrinciple] = useState<string | null>(null)
 
   const handlePrincipleClick = (principleId: string) => {
     setSelectedPrinciple(selectedPrinciple === principleId ? null : principleId)
@@ -36,8 +35,6 @@ export function MovementPrinciples({ principles }: MovementPrinciplesProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => handlePrincipleClick(principle.id)}
-            onMouseEnter={() => setHoveredPrinciple(principle.id)}
-            onMouseLeave={() => setHoveredPrinciple(null)}
           >
             {principle.name}
           </motion.button>

@@ -1,12 +1,25 @@
-'use client'
-
+import type { Metadata, Viewport } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import './responsive.css'
-import { Inter } from 'next/font/google'
-import { ThemeProvider } from 'next-themes'
-import { Toaster } from '@/components/ui/toaster'
+import { Providers } from '@/components/providers'
 
 const inter = Inter({ subsets: ['latin'] })
+
+export const metadata: Metadata = {
+  title: 'Santiago Ramirez | Coder • Artist • Athlete',
+  description:
+    'Personal website of Santiago Ramirez — Coder, Artist, and Athlete',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export default function RootLayout({
   children,
@@ -15,17 +28,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <title>Santiago Ramirez | Coder • Artist • Athlete</title>
-        <meta name="description" content="Personal website of Santiago Ramirez - Coder, Artist, and Athlete" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
-          <Toaster />
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )

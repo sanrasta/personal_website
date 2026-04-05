@@ -17,7 +17,6 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { 
   Calendar,
-  Clock,
   Heart,
   Zap,
   Moon,
@@ -70,7 +69,7 @@ export function MovementPortfolio() {
           <CardHeader>
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 text-blue-600" />
-              <CardTitle>This Week's Sessions</CardTitle>
+              <CardTitle>This Week&apos;s Sessions</CardTitle>
             </div>
             <CardDescription>Small, consistent practices</CardDescription>
           </CardHeader>
@@ -225,9 +224,10 @@ export function MovementPortfolio() {
           
           <div className="mt-6 p-4 bg-slate-50 rounded-lg">
             <p className="text-sm text-slate-700 italic">
-              "Movement feels more natural. Less thinking about workouts, more just moving through the day."
+              &ldquo;Movement feels more natural. Less thinking about workouts, more just moving through the
+              day.&rdquo;
             </p>
-            <p className="text-xs text-slate-500 mt-2">— This month's reflection</p>
+            <p className="text-xs text-slate-500 mt-2">— This month&apos;s reflection</p>
           </div>
         </CardContent>
       </Card>

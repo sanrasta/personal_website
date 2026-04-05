@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { 
@@ -38,8 +37,6 @@ import {
 } from 'lucide-react'
 
 export default function About() {
-  const [activeTab, setActiveTab] = useState('personal')
-  
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -90,11 +87,7 @@ export default function About() {
       
       {/* Main Content */}
       <div className="max-w-6xl mx-auto py-16 px-4">
-        <Tabs 
-          defaultValue="personal" 
-          className="mb-12"
-          onValueChange={setActiveTab}
-        >
+        <Tabs defaultValue="personal" className="mb-12">
           <div className="flex justify-center mb-8">
             <TabsList className="grid grid-cols-3 w-full max-w-md">
               <TabsTrigger value="personal">Personal</TabsTrigger>
